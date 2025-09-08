@@ -1,158 +1,51 @@
-<!-- MVP کامل S-MART (School Materials And Resource Trade) -->
-
-<!doctype html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html>
+<html lang="fa">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>S-MART — پلتفرم تامین مدارس (MVP)</title>
-  <meta name="description" content="S-MART: بازار تخصصی مدارس برای تهیه لوازم، تجهیزات و خدمات آموزشی برای مدارس، والدین و تامین‌کنندگان. MVP برای شرکت بهسامان تدبیر.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-MART | بازار مدارس</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">S-MART</a>
-      <nav class="main-nav">
-        <a href="#features">ویژگی‌ها</a>
-        <a href="#vendors">تامین‌کنندگان</a>
-        <a href="#schools">مدارس</a>
-        <a href="#contact">تماس</a>
-      </nav>
-      <div class="cta">
-        <a class="btn primary" href="#signup">ثبت‌نام تامین‌کننده</a>
-      </div>
-      <button class="hamburger" aria-label="menu">☰</button>
-    </div>
+  <!-- بخش معرفی پروژه -->
+  <header class="hero">
+    <h1>S-MART</h1>
+    <p>بازار تأمین منابع و تجارت پیشرفته با مدارس</p>
+    <p class="slogan">ایجاد ارتباط مستقیم میان مدارس، دانش‌آموزان و تأمین‌کنندگان</p>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>S-MART — بازار تامین مدرسه</h1>
-          <p>شبکه‌ای از مدارس با دسترسی مستقیم به 760 مدرسه. سفارش، توزیع و فروش لوازم تحریر، تجهیزات و بسته‌های تغذیه سالم به یک پلتفرم واحد.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#vendors">برای تامین‌کننده‌ها</a>
-            <a class="btn outline" href="#schools">برای مدارس/والدین</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="card">
-            <h3>آمار اولیه</h3>
-            <ul>
-              <li><strong>760</strong> مدارس متصل</li>
-              <li><strong>0</strong> تامین‌کننده (هنوز)</li>
-              <li><strong>هدف</strong>: فروش B2B و B2C</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- دکمه‌های خدمات -->
+  <section class="services">
+    <button class="btn">🏫 خدمات مدارس</button>
+    <button class="btn">🎓 خدمات دانش‌آموزان</button>
+  </section>
 
-    <section id="features" class="features container">
-      <h2>ویژگی‌های MVP</h2>
-      <div class="grid">
-        <article class="feature">
-          <h3>فروشگاه آنلاین</h3>
-          <p>فروش اقلام مصرفی مدارس و محصولات ویژه والدین.</p>
-        </article>
-        <article class="feature">
-          <h3>بخش تامین‌کنندگان</h3>
-          <p>ثبت‌نام تامین‌کنندگان و نمایش محصولات در صفحه اختصاصی آنها.</p>
-        </article>
-        <article class="feature">
-          <h3>داشبورد مدرسه</h3>
-          <p>صفحه ساده برای هر مدرسه جهت مشاهده سفارشات و پیشنهادات.</p>
-        </article>
-        <article class="feature">
-          <h3>اشتراک ماهیانه</h3>
-          <p>بسته‌های تغذیه و لوازم تحریر برای خانواده‌ها.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="vendors" class="container vendors">
-      <h2>تامین‌کنندگان</h2>
-      <p>شرکت‌ها می‌توانند فروشگاه خود را ثبت کنند و محصولات را به مدارس و والدین ارائه دهند.</p>
-      <div class="vendor-cards">
-        <div class="vendor-card">
-          <h4>نمونه فروشنده</h4>
-          <p>کاله — لبنیات مدرسه (نمونه)</p>
-          <a class="btn small" href="#">نمایش محصولات</a>
-        </div>
-        <div class="vendor-card">
-          <h4>ثبت فروشنده</h4>
-          <p>اگر شما تامین‌کننده هستید، فرم ثبت‌نام را تکمیل کنید.</p>
-          <a class="btn small outline" href="#signup">ثبت‌نام</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="schools" class="container schools">
-      <h2>مدارس و والدین</h2>
-      <p>مدارس می‌توانند پنل اختصاصی داشته باشند؛ والدین از طریق مدرسه خود سفارش دهند.</p>
-      <div class="product-list">
-        <article class="product">
-          <div class="product-thumb">📦</div>
-          <div class="product-body">
-            <h4>بسته تغذیه سالم</h4>
-            <p>میان وعده صبحانه مناسب مدرسه — بسته 20 عددی</p>
-            <div class="product-actions">
-              <span class="price">تومان 120,000</span>
-              <a class="btn small" href="#">افزودن به سبد</a>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <div class="product-thumb">✏️</div>
-          <div class="product-body">
-            <h4>بسته لوازم‌التحریر</h4>
-            <p>دفتر، مداد، پاک‌کن و سایر اقلام ضروری</p>
-            <div class="product-actions">
-              <span class="price">تومان 80,000</span>
-              <a class="btn small" href="#">افزودن به سبد</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="signup" class="container signup">
-      <h2>ثبت‌نام تامین‌کننده</h2>
-      <form class="signup-form" onsubmit="return false;">
-        <label>نام شرکت
-          <input type="text" name="company" placeholder="نام شرکت" required>
-        </label>
-        <label>ایمیل
-          <input type="email" name="email" placeholder="email@example.com" required>
-        </label>
-        <label>توضیحات کوتاه
-          <textarea name="desc" placeholder="محصولات یا خدمات شما"></textarea>
-        </label>
-        <div class="form-actions">
-          <button class="btn primary" type="submit">ارسال درخواست</button>
-          <button class="btn outline" type="reset">پاک کردن</button>
-        </div>
-      </form>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>تماس</h2>
-      <p>برای تماس: <a href="mailto:info@smart.example">info@smart.example</a></p>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 شرکت بهسامان تدبیر — S-MART MVP</p>
-      <nav class="footer-nav">
-        <a href="#">قوانین</a>
-        <a href="#">حریم خصوصی</a>
-      </nav>
+  <!-- تامین‌کنندگان برتر -->
+  <section class="suppliers">
+    <h2>تأمین‌کنندگان برتر</h2>
+    <div class="cards">
+      <div class="card">📚 نشر اندیشه</div>
+      <div class="card">🖊️ ایران تحریر</div>
+      <div class="card">🖥️ مدبرکامپیوتر</div>
+      <div class="card">🎨 آرتا</div>
+      <div class="card">⚽ اسپرتینو</div>
     </div>
-  </footer>
+  </section>
 
+  <!-- فرم ثبت نام تامین‌کنندگان -->
+  <section class="register">
+    <h2>ثبت‌نام تأمین‌کنندگان</h2>
+    <form>
+      <input type="text" placeholder="نام تأمین‌کننده" required>
+      <input type="text" placeholder="زمینه فعالیت" required>
+      <input type="tel" placeholder="شماره تماس" required>
+      <input type="email" placeholder="ایمیل / وبسایت">
+      <button type="submit" class="btn">ثبت‌نام</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 S-MART | Marketplace for Advanced Resources & Trade</p>
+  </footer>
 </body>
 </html>
