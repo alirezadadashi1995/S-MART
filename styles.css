@@ -1,230 +1,97 @@
-/* styles.css — نسخه بهینه و حرفه‌ای برای MVP S-MART */
-
-:root {
-  --bg: #f7f8fb;
-  --card: #ffffff;
-  --primary: #0b74ff;
-  --accent: #ff8a00;
-  --text: #111827;
-  --shadow: rgba(16, 24, 40, 0.06);
-}
-
-* {
-  box-sizing: border-box;
+/* فونت و استایل کلی */
+body {
+  font-family: Tahoma, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.8;
+  background-color: #f9f9f9;
+  color: #333;
+  direction: rtl;
+  text-align: center;
 }
 
-body {
-  font-family: 'Vazirmatn', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header */
-.site-header {
-  background: linear-gradient(90deg, rgba(11,116,255,0.08), rgba(255,138,0,0.05));
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(5px);
-  z-index: 50;
-  padding: 12px 0;
-}
-.header-inner {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.brand {
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--text);
-  text-decoration: none;
-}
-.main-nav {
-  display: flex;
-  gap: 12px;
-  margin-left: auto;
-}
-.main-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-.cta .btn {
-  margin-left: 12px;
-}
-.hamburger {
-  display: none;
-  background: transparent;
-  border: 0;
-  font-size: 24px;
-  margin-left: auto;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-}
-.btn.primary {
-  background: var(--primary);
-  color: #fff;
-}
-.btn.primary:hover {
-  background: darken(var(--primary), 10%);
-}
-.btn.outline {
-  background: transparent;
-  border-color: rgba(0,0,0,0.1);
-  color: var(--text);
-}
-.btn.small {
-  padding: 6px 10px;
-  font-size: 14px;
-}
-
-/* Hero Section */
+/* هدر */
 .hero {
-  padding: 60px 0;
-  display: flex;
-  justify-content: center;
-}
-.hero-inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-}
-.hero-text {
-  flex: 1;
-  min-width: 280px;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  padding: 50px 20px;
 }
 .hero h1 {
-  font-size: 32px;
-  margin-bottom: 12px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
-.hero p {
-  margin-bottom: 18px;
-  color: rgba(0,0,0,0.7);
-}
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.hero-card .card {
-  background: var(--card);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px var(--shadow);
-}
-.hero-card ul {
-  list-style: none;
+.hero .slogan {
+  font-size: 1.2rem;
   margin-top: 10px;
 }
-.hero-card li {
-  margin-bottom: 6px;
+
+/* دکمه‌ها */
+.services {
+  margin: 30px 0;
+}
+.btn {
+  background: #1cc88a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #17a673;
 }
 
-/* Features */
-.features { padding: 40px 0; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+/* تامین‌کنندگان */
+.suppliers {
+  padding: 40px 20px;
+  background: #fff;
 }
-.feature {
-  background: var(--card);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px var(--shadow);
-  transition: transform 0.2s;
+.suppliers h2 {
+  margin-bottom: 20px;
 }
-.feature:hover {
-  transform: translateY(-5px);
-}
-
-/* Vendors */
-.vendors { padding: 40px 0; }
-.vendor-cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  justify-content: center;
+  gap: 15px;
 }
-.vendor-card {
-  flex: 1 1 220px;
-  background: var(--card);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px var(--shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Products */
-.product-list {
+/* فرم ثبت نام */
+.register {
+  padding: 40px 20px;
+}
+.register form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-.product {
-  display: flex;
   align-items: center;
-  gap: 16px;
-  background: var(--card);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px var(--shadow);
-  transition: transform 0.2s;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
 }
-.product:hover { transform: translateY(-4px); }
-.product-thumb { font-size: 32px; }
-.product-actions { margin-top: 8px; display: flex; gap: 12px; align-items: center; }
-.price { font-weight: 700; }
-
-/* Signup Form */
-.signup { padding: 40px 0; }
-.signup-form {
-  display: grid;
-  gap: 12px;
-  max-width: 640px;
-}
-.signup-form label { display: flex; flex-direction: column; gap: 6px; }
-.signup-form input, .signup-form textarea {
+.register input {
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid rgba(0,0,0,0.1);
-  transition: border 0.2s;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
-.signup-form input:focus, .signup-form textarea:focus {
-  border-color: var(--primary);
+.register button {
+  width: 100%;
 }
-.form-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
-/* Footer */
-.site-footer { padding: 20px 0; background: #f0f0f0; margin-top: 40px; }
-.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
-.footer-nav a { margin-left: 12px; color: rgba(0,0,0,0.6); text-decoration: none; }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
-  .hero-inner { flex-direction: column; }
-  .main-nav { display: none; }
-  .hamburger { display: block; margin-left: auto; }
+/* فوتر */
+footer {
+  background: #4e73df;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
 }
