@@ -25,26 +25,46 @@ body {
   margin-top: 10px;
 }
 
-/* دکمه‌ها */
+/* بخش خدمات */
 .services {
   margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
-.btn {
-  background: #1cc88a;
-  color: white;
-  border: none;
-  padding: 14px 30px;
-  margin: 10px;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+.services .btn {
+  background: #3498db;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  min-width: 200px;     /* حداقل عرض */
+  text-align: center;
 }
-.btn:hover {
-  background: #17a673;
+
+/* حالت هاور */
+.services .btn:hover {
+  background: #2c80b4;
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+/* مخصوص موبایل */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;   /* دکمه‌ها زیر هم */
+    align-items: center;      /* وسط‌چین */
+  }
+
+  .services .btn {
+    width: 90%;              /* دکمه‌ها تقریبا تمام عرض */
+    max-width: 350px;        /* حداکثر عرض برای نظم بیشتر */
+  }
+}
+
 
 /* تامین‌کنندگان */
 .suppliers {
@@ -202,20 +222,5 @@ footer {
   font-size: 1rem;
 }
 
-
-
-/* بخش دکمه‌های خدمات */
-.services {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px; /* فاصله بین دکمه‌ها */
-}
-
-.services .btn {
-  flex: 1 1 200px; /* حداقل عرض هر دکمه 200px */
-  text-align: center;
-}
 
 
